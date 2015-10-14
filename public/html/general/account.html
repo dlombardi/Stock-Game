@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-md-4">
+      <form action="" class="well">
+        <h4>Enter Stock</h4>
+        <input ng-change="stockLookup(stock)" class="form-control" data-animation="am-flip-x" bs-options="option.Symbol as option.Name for option in lookupResults" placeholder="Enter Company" bs-typeahead type="text" ng-model="stock">
+        <button class="btn btn-success" ng-click="addStock(stock)">Add</button>
+        {{lookupOptions}}
+      </form>
+    </div>
+    <div class="col col-md-6">
+      <h2>Balance: {{balance | currency}}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-md-4">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="stock in stocks">
+            <td>{{stock.Name}}</td>
+            <td>{{stock.Symbol}}</td>
+            <td>{{stock.shares}}</td>
+            <td>{{stock.LastPrice | currency}}</td>
+            <td><button class="btn btn-primary" ng-click="sellStock(stock)">sell</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+{
+  "name": "app_name",
+  "version": "0.0.0",
+  "authors": [
+    "cnichols <mellowdious@mail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5",
+    "angular-bootstrap": "~0.14.2",
+    "lodash": "~3.10.1",
+    "typeahead.js": "~0.11.1",
+    "angular-typeahead": "~0.2.4",
+    "angular-strap": "~2.3.3"
+  }
+}
