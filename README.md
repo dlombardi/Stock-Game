@@ -1,4 +1,4 @@
-# Fullstack MEAN Template
+# Stock Management Game
 
 Setup:  `npm run setup` to reset and install all dependencies.
 
